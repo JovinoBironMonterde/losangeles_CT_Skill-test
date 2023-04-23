@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.home-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Image.png);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home-section nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+ul li{
+    margin: 0 30px;
+    list-style: none;
+
+}
+ul li a{
+    font-size: 12px;
+letter-spacing: 1px;
+line-height: 20px;
+text-transform: uppercase;
+color: #fefeff;
+font-weight: 900;
+font-style: italic;
+font-family: "Lato";
+}
+
+#nav2{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+        padding: 0 150px;
+    color: black;
+}
+#nav2 ul li a{
+ font-weight: 900;
+font-style: italic;
+font-family: "Lato";
+color: #414f6b;
+}
+#nav2 ul li a:hover{
+    cursor: pointer;
+    color: #414f6bc1;
+}
+.logo{ 
+    display: flex;
+}
+.logo div{
+    margin: 0 5px;
+    letter-spacing: 0px;
+line-height: 23px;
+text-transform: uppercase;
+color: #4d4d4d;
+font-family: "Bebas";
+}
+
+.history1-section{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background-image: url(../img/peak.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.history1-section .container{
+    width: 100%;
+        padding: 0 150px;
+}
+.history1-section .container h1{
+    position: relative;
+    font-size: 9rem;
+    color: #414f6b;
+    font-family: "Oswald";
+}
+.history1-section .container h1::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #414f6b;
+    bottom: 35px;
+    left: 130px;
+}
+.history1-section .container span{
+    position: absolute;
+    font-size: 20px;
+    bottom: 60px;
+    left: 130px;
+    color: #414f6b;
+}
+
+.history1-section .container p{
+    width: 100%;
+    padding: 0 80px;
+}
+
+.img-bottom{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.573);
+    padding: 30px;
+    text-align: center;
+}
+
+#nav3{
+     width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        padding: 0 150px;
+    color: black;
+}
+#nav3 h1{
+    position: relative;
+    font-size: 9rem;
+    margin-right: 90px;
+    opacity: 0.502;
+
+color: #414f6b;
+font-weight: 700;
+font-family: "Oswald";
+}
+
+#nav3 h1::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+  
+    bottom: 35px;
+    left: 140px;
+}
+#nav3 span{
+    position: absolute;
+    font-size: 20px;
+    bottom: 60px;
+    left: 140px;
+color: #414f6b;
+font-weight: 700;
+}
+
+.schedule-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/schedule-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#nav4{
+    width: 100%;
+    height: auto;
+ background-color: #414f6b;
+    padding: 0 130px;
+}
+#nav4 ul li {
+    padding: 5px 0;
+    margin: 0;
+    text-decoration: underline;
+    font-style: none !important;
+color: #414f6b;
+}
+#nav4 ul li a{
+    text-decoration: none;
+      font-style: none !important;
+      padding: 9px;
+}
+#nav4 ul li a:hover{
+    cursor: pointer;
+    background-color: #e8e4e4;
+    color: black;
+}
+.div-schedule{
+    width: 360px;
+    height: auto;
+    background-color: rgba(240, 255, 255, 0.596);
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+.div-schedule div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    padding-left: 150px;
+    padding-right: 50px;
+     background-color: #414f6b;
+     color: #fefeff;
+}
+footer .logo div{
+       color: #fefeff;
+}
+footer span{
+    font-size: 14px;
+}
+footer span p{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+   .home-section nav, #nav2, #nav3, footer,.history1-section .container{
+    padding:  20px;
+   }
+   .div-schedule{
+    margin: 50px auto;
+   }
+}
+@media only screen and (max-width: 550px) {
+    #nav3{
+        height: auto;
+        display: block;
+    }
+    .dnone{
+        display: none;
+    }
+    .history1-section .container p{
+        padding: 20px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
